@@ -22,9 +22,9 @@
 
 ### Пример использования
 ```jsx
-import CallMeFormWithTimer from 'components/common/CallMeFormWithTimer';
+import CallMeFormWithTimer from 'bsm-shared/components/common/CallMeFormWithTimer';
 
-<section className="block-form-timer" style={{backgroundImage: "url(" + require('static/images/block/h.jpg') + ")"}}>
+<section className="block-form-timer" style={{backgroundImage: "url(" + require('bsm-shared/static/images/block/h.jpg') + ")"}}>
     <h2 className="block-form-timer__title">
         <span style={{fontSize: "2em", marginTop: "-2em"}}>20%</span><br/>
         Успей получить<br/> скидку на пакет <br/> «Успешная Защита»

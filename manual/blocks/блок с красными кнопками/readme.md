@@ -34,7 +34,7 @@
 <ServiceBlock
     color="#333333"
     url="/diplom-na-zakaz"
-    image={require('static/images/block/j.jpg')}
+    image={require('bsm-shared/static/images/block/j.jpg')}
     gradient="rgba(199, 212, 229, 0.75)"
     title="Дипломная работа"
     text={<div>

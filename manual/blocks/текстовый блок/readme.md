@@ -20,7 +20,7 @@
 
 ### Пример использования
 ```jsx
-import TextBlock from 'components/common/TextBlock'
+import TextBlock from 'bsm-shared/components/common/TextBlock'
 
 <TextBlock>
     <h2 className="title">

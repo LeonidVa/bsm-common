@@ -26,8 +26,8 @@ infoBlockConfig это массив объектов с полями icon для
 
 ### Пример использования
 ```babel
-import InfoBlock from 'components/common/InfoBlock';
-import infoBlockConfig from 'data/infoBlock/diplom'
+import InfoBlock from 'bsm-shared/components/common/InfoBlock';
+import infoBlockConfig from 'bsm-shared/data/infoBlock/diplom'
 
 <InfoBlock infoBlockConfig={infoBlockConfig}/>
 ```

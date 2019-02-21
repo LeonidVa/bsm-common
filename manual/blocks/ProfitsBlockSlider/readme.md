@@ -40,8 +40,8 @@ infoBlockConfig это массив объектов с полями imageSrc д
 
 ### Пример использования
 ```js
-import ProfitsBlockSlider from 'components/common/ProfitsBlockSlider';
-import profitBlockConfigLong from 'data/profitBlockConfig';
+import ProfitsBlockSlider from 'bsm-shared/components/common/ProfitsBlockSlider';
+import profitBlockConfigLong from 'bsm-shared/data/profitBlockConfig';
 
 <ProfitsBlockSlider profitBlockConfig={profitBlockConfigLong}/>
 ```

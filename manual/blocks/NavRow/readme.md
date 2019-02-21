@@ -22,8 +22,8 @@
 
 ### Пример использования
 ```jsx
-import BlockNav from 'components/common/BlockNav';
-import NavRow from 'components/common/BlockNav/NavRow';
+import BlockNav from 'bsm-shared/components/common/BlockNav';
+import NavRow from 'bsm-shared/components/common/BlockNav/NavRow';
 
 <BlockNav>
     <NavRow title="Оценить работу" description="Узнайте сроки и цену вашей работы" url='#'/>

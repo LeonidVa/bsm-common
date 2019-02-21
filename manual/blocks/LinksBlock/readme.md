@@ -19,6 +19,6 @@
 
 ### Пример использования
 ```jsx
-import links from 'data/linksBlockConfig';
+import links from 'bsm-shared/data/linksBlockConfig';
 <LinksBlock links={links}/>
 ```
