@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import stat from 'utils/analytics';
+import stat from 'bsm-shared/utils/analytics';
 import axios from 'axios';
 import getConfig from 'next/config';
 import { connect as reduxConnect } from 'react-redux'

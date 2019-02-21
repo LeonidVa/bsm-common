@@ -1,5 +1,5 @@
-import ServiceBlock from 'components/common/ServiceBlock'
-import servicecards from "data/serviceBlock/otchPoPrak";
+import ServiceBlock from 'bsm-shared/components/common/ServiceBlock'
+import servicecards from "bsm-shared/data/serviceBlock/otchPoPrak";
 import React from "react";
 
 
@@ -7,7 +7,7 @@ export default () => (
     <ServiceBlock
         color="#f5f5f5"
         url="#form"
-        image={require('static/images/block/otch-prakrik1.jpg')}
+        image={require('bsm-shared/static/images/block/otch-prakrik1.jpg')}
         gradient="rgba(141, 50, 85, 0.95), rgba(141, 50, 85, 0.7)"
         title="Отчет по практике"
         text={<div>

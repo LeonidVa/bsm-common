@@ -1,5 +1,5 @@
-import ServiceBlock from 'components/common/ServiceBlock'
-import servicecards from "data/serviceBlock/doctorskayaDis";
+import ServiceBlock from 'bsm-shared/components/common/ServiceBlock'
+import servicecards from "bsm-shared/data/serviceBlock/doctorskayaDis";
 import React from "react";
 
 
@@ -7,7 +7,7 @@ export default () => (
     <ServiceBlock
         color="#fffaf4"
         url="#form"
-        image={require('static/images/block/9.jpg')}
+        image={require('bsm-shared/static/images/block/9.jpg')}
         gradient="rgba(25, 84, 184, 0.95), rgba(25, 84, 184, 0.7)"
         title="Докторская диссертация"
         text={<div>

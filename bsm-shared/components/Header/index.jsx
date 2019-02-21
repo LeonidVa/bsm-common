@@ -5,7 +5,7 @@ import MenuMob from './components/MenuMob';
 import MenuWide from './components/MenuWide';
 import ButtonPhone from './components/ButtonPhone';
 import Hamburger from './components/Hamburger';
-import { ToggleCallPopup } from 'components/modals/Call';
+import { ToggleCallPopup } from 'bsm-shared/components/modals/Call';
 
 import  { HeaderBlock } from './style.js';
 import  {

@@ -1,4 +1,4 @@
-import playIcon from 'static/images/play-icon.svg'
+import playIcon from 'bsm-shared/static/images/play-icon.svg'
 import React, {Component} from 'react';
 import {VideoSection} from './style.js';
 

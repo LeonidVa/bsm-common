@@ -1,5 +1,5 @@
-import { BaseForm, connect } from 'components/common/forms/BaseForm'
-import stat from 'utils/analytics';
+import { BaseForm, connect } from 'bsm-shared/components/common/forms/BaseForm'
+import stat from 'bsm-shared/utils/analytics';
 import{
   BlockFormItem,
   Label,

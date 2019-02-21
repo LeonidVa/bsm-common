@@ -9,7 +9,7 @@ export const PageWrapper = styled.div`
   padding-bottom: 4rem;
   position: relative;
   &.main {
-    background-image: url(${require('static/images/header/bg.svg')});
+    background-image: url(${require('bsm-shared/static/images/header/bg.svg')});
     background-size: 100% 100vh;
     background-attachment: fixed;
     padding-bottom: 50px;
@@ -25,19 +25,19 @@ export const PageWrapper = styled.div`
     background-position: center 0;
   }
   &.bg-img1 {
-    background-image: url(${require('static/images/header/bg1.svg')});
+    background-image: url(${require('bsm-shared/static/images/header/bg1.svg')});
   }
   &.bg-img2 {
-    background-image: url(${require('static/images/header/bg2.svg')});
+    background-image: url(${require('bsm-shared/static/images/header/bg2.svg')});
   }
   &.bg-img3 {
-    background-image: url(${require('static/images/header/bg3.svg')});
+    background-image: url(${require('bsm-shared/static/images/header/bg3.svg')});
   }
   &.bg-img4 {
-    background-image: url(${require('static/images/header/bg4.svg')});
+    background-image: url(${require('bsm-shared/static/images/header/bg4.svg')});
   }
   &.bg-img5 {
-    background-image: url(${require('static/images/header/bg5.svg')});
+    background-image: url(${require('bsm-shared/static/images/header/bg5.svg')});
   }
   &.bg-c1 {
     background-color: #857a95;

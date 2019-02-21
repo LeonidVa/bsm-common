@@ -1,11 +1,11 @@
-import icon_1 from "static/images/info/1.svg"
-import icon_2 from "static/images/info/2.svg"
-import icon_3 from "static/images/info/3.svg"
-import icon_4 from "static/images/info/4.svg"
-import icon_5 from "static/images/info/5.svg"
-import icon_6 from "static/images/info/6.svg"
-import icon_7 from "static/images/info/7.svg"
-import icon_8 from "static/images/info/8.svg"
+import icon_1 from "bsm-shared/static/images/info/1.svg"
+import icon_2 from "bsm-shared/static/images/info/2.svg"
+import icon_3 from "bsm-shared/static/images/info/3.svg"
+import icon_4 from "bsm-shared/static/images/info/4.svg"
+import icon_5 from "bsm-shared/static/images/info/5.svg"
+import icon_6 from "bsm-shared/static/images/info/6.svg"
+import icon_7 from "bsm-shared/static/images/info/7.svg"
+import icon_8 from "bsm-shared/static/images/info/8.svg"
 
 const infoBlockConfig = [
     {icon: icon_1, title: 'Отчет по практике', desc: 'От 3 000 руб. до 10 000 руб.'},

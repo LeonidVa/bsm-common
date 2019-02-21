@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Timer from 'components/common/Timer/index.js';
-import Close from 'components/modals/Close';
-import PhoneAndSubmit from 'components/common/forms/PhoneAndSubmit';
+import Timer from 'bsm-shared/components/common/Timer/index.js';
+import Close from 'bsm-shared/components/modals/Close';
+import PhoneAndSubmit from 'bsm-shared/components/common/forms/PhoneAndSubmit';
 import {
   FormTimer,
   BlockFormTimerMessage,
@@ -45,7 +45,7 @@ class FormWithTimer extends Component {
             style={{display: notifyOpen ? "flex" : "none"}}
           >
             <Close onClick={this.toggleNotify} inverse/>
-            <img style={{ width: '100%' }}src={require("static/images/fox-circle.svg")} alt="Fox"/>
+            <img style={{ width: '100%' }}src={require("bsm-shared/static/images/fox-circle.svg")} alt="Fox"/>
             <BlockFormTitle className="block-form__title">Спасибо!</BlockFormTitle>
             <FormP>Мы получили Ваше сообщение и скоро свяжемся с Вами!</FormP>
           </BlockFormMessage>

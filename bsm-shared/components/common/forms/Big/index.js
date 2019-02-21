@@ -1,16 +1,16 @@
 import { PropTypes } from 'prop-types';
 import React from 'react';
 import getConfig from 'next/config';
-import { BaseForm, connect } from 'components/common/forms/BaseForm';
+import { BaseForm, connect } from 'bsm-shared/components/common/forms/BaseForm';
 import Link from 'next/link';
 import Dropzone from 'react-dropzone';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import close from '@fortawesome/fontawesome-free-solid/faWindowClose';
 import Dropdown from 'react-dropdown';
 import Recaptcha from 'react-google-recaptcha';
-import DatePicker from 'components/common/DatePicker';
-import Fox from 'static/images/fox-circle.svg';
-import Close from 'components/modals/Close';
+import DatePicker from 'bsm-shared/components/common/DatePicker';
+import Fox from 'bsm-shared/static/images/fox-circle.svg';
+import Close from 'bsm-shared/components/modals/Close';
 import {
   BlockFormItem,
   DropZone,
@@ -28,7 +28,7 @@ import {
 
 
 
-/*   fields are stored in /data/main.js   */
+/*   fields are stored in /bsm-shared/data/main.js   */
 
 class OrderForm extends BaseForm {
   constructor(props) {

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import {ToggleCallPopup} from "components/modals/Call"
-import stat from "utils/analytics";
+import {ToggleCallPopup} from "bsm-shared/components/modals/Call"
+import stat from "bsm-shared/utils/analytics";
 import {
   ButtonMobile,
   ButtonDesktop

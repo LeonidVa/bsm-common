@@ -1,16 +1,16 @@
 import React, {Component, Fragment} from 'react';
 import Head from 'next/head';
 import { connect as reduxConnect } from 'react-redux'
-import Header from 'components/Header';
-import Footer from 'components/Footer';
+import Header from 'bsm-shared/components/Header';
+import Footer from 'bsm-shared/components/Footer';
 
-import ExitPopup, {exitPopupContext, exitPopupState} from 'components/modals/ExitPopup'
-import CallPopup, {callPopupContext, callPopupState} from 'components/modals/Call'
-import ErrorModal from 'components/modals/Error'
+import ExitPopup, {exitPopupContext, exitPopupState} from 'bsm-shared/components/modals/ExitPopup'
+import CallPopup, {callPopupContext, callPopupState} from 'bsm-shared/components/modals/Call'
+import ErrorModal from 'bsm-shared/components/modals/Error'
 import getConfig from 'next/config';
-import stat from 'utils/analytics'
+import stat from 'bsm-shared/utils/analytics'
 import { sendForm } from '@redux/data/form';
-import { isStringEmpty } from '@helpers/isStringEmpty';
+import { isStringEmpty } from '@bsm-shared/helpers/isStringEmpty';
 
 import  { GlobalStyle } from './style';
 
@@ -167,7 +167,7 @@ class Wrapper extends Component {
               <title>{this.props.title}</title>
               <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
               <meta name="description" content={this.props.description}/>
-              <link rel="icon" href={require('static/favicon.ico')} type="image/x-icon"/>
+              <link rel="icon" href={require('bsm-shared/static/favicon.ico')} type="image/x-icon"/>
             </Head>
             <Header navButtons={this.props.headerNavButtons} showHamburger={this.props.showHamburger}/>
             {this.props.children}

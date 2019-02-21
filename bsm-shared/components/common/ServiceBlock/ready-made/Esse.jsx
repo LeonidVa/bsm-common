@@ -1,5 +1,5 @@
-import ServiceBlock from 'components/common/ServiceBlock'
-import servicecards from "data/serviceBlock/esse";
+import ServiceBlock from 'bsm-shared/components/common/ServiceBlock'
+import servicecards from "bsm-shared/data/serviceBlock/esse";
 import React from "react";
 
 
@@ -7,7 +7,7 @@ export default () => (
     <ServiceBlock
         color="#ffffff"
         url="#form"
-        image={require('static/images/block/i.jpg')}
+        image={require('bsm-shared/static/images/block/i.jpg')}
         gradient="rgba(180, 61, 101, 0.95), rgba(180, 61, 101, 0.7)"
         title="Эссе"
         text={<div>

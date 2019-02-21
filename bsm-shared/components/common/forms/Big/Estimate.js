@@ -1,5 +1,5 @@
 import Form from './index'
-import fields from 'data/form/main';
+import fields from 'bsm-shared/data/form/main';
 
 export default () => (
     <Form

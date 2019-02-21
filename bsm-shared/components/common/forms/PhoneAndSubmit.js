@@ -1,4 +1,4 @@
-import { BaseForm, connect } from 'components/common/forms/BaseForm'
+import { BaseForm, connect } from 'bsm-shared/components/common/forms/BaseForm'
 import {
   FormSubmit,
   Button,

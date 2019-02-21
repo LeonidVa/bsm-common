@@ -1,12 +1,12 @@
-import ServiceBlock from 'components/common/ServiceBlock'
-import servicecards from "data/serviceBlock/matzashDisser";
+import ServiceBlock from 'bsm-shared/components/common/ServiceBlock'
+import servicecards from "bsm-shared/data/serviceBlock/matzashDisser";
 
 
 export default () => (
     <ServiceBlock
         color="#333333"
         url=""
-        image={require('static/images/block/10.jpg')}
+        image={require('bsm-shared/static/images/block/10.jpg')}
         gradient="rgba(213, 222, 231, 0.95), rgba(213, 222, 231, 0.7)"
         title="Материалы для успешной защиты"
         text={<div>

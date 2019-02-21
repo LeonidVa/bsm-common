@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
-import socials from 'data/socials';
-import stat from 'utils/analytics';
+import socials from 'bsm-shared/data/socials';
+import stat from 'bsm-shared/utils/analytics';
 import {
   BlockMess,
   BlockMessItem,

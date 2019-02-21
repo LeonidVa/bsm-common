@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { ToggleCallPopup, ToggleQuestionPopup } from "components/modals/Call"
+import { ToggleCallPopup, ToggleQuestionPopup } from "bsm-shared/components/modals/Call"
 import {
   CallAskSection,
   Inner,

@@ -1,7 +1,7 @@
 import React, {Component, createContext} from 'react';
 
 import Close from "../Close/index";
-import PhoneAndSubmit from 'components/common/forms/PhoneAndSubmit';
+import PhoneAndSubmit from 'bsm-shared/components/common/forms/PhoneAndSubmit';
 import {
     ModalSale,
     FormAlert,
@@ -65,7 +65,7 @@ class ExitPopup extends Component {
                                   <Close onClick={() => {
                                     context.hide()
                                   }} inverse/>
-                                  <img style={{ width: '100%' }} src={require("static/images/fox-circle.svg")} alt="Fox"/>
+                                  <img style={{ width: '100%' }} src={require("bsm-shared/static/images/fox-circle.svg")} alt="Fox"/>
                                   <BlockFormTitle className="block-form__title">Спасибо!</BlockFormTitle>
                                   <P>Мы получили Ваше сообщение и скоро свяжемся с Вами!</P>
                                 </FormAlert>
