@@ -17,13 +17,13 @@
 требует определённых контейнеров для нормального отображения.
 
 ```jsx
-import Wrapper from 'components/Wrapper';
-import Title from 'components/common/Title';
-import NavRow from 'components/common/NavRow';
-import MessBlock from 'components/common/MessagersBlock';
-import InfoBlock from 'components/common/InfoBlock';
-import ImageBlock from 'components/common/ImageBlock/index.js';
-import infoBlockConfig from 'data/infoBlock/diplom'
+import Wrapper from 'bsm-shared/components/Wrapper';
+import Title from 'bsm-shared/components/common/Title';
+import NavRow from 'bsm-shared/components/common/NavRow';
+import MessBlock from 'bsm-shared/components/common/MessagersBlock';
+import InfoBlock from 'bsm-shared/components/common/InfoBlock';
+import ImageBlock from 'bsm-shared/components/common/ImageBlock/index.js';
+import infoBlockConfig from 'bsm-shared/data/infoBlock/diplom'
 
 const page = () => (
     <Wrapper title=":тут title который в head:">
@@ -53,7 +53,7 @@ const page = () => (
  <MessBlock/>
             <InfoBlock infoBlockConfig={infoBlockConfig}/>
 
-            <ImageBlock imageSrc={require('static/images/block/a.jpg')}/>
+            <ImageBlock imageSrc={require('bsm-shared/static/images/block/a.jpg')}/>
 ```
 
 ## Элементы
@@ -69,7 +69,7 @@ Wrapper содержит следующий код
     <title>{this.props.title}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <meta name="description" content={this.props.description}/>
-    <link rel="icon" href={require('static/favicon.ico')} type="image/x-icon"/>
+    <link rel="icon" href={require('bsm-shared/static/favicon.ico')} type="image/x-icon"/>
 </Head>
 <Header/>
 {this.props.children}
@@ -84,7 +84,7 @@ Wrapper содержит следующий код
 Они открываются на мобильной и на широкой версиях соотв. в зависимости от
 обнаруженного типа устройства на момент загрузки страницы.
 
-Их стили и код живут в `/components/Header/components`.
+Их стили и код живут в `/bsm-shared/components/Header/components`.
 
 В случае с широким меню, элемент `<div.menu-desk__lists>` может содержать
 один или несколько списков.

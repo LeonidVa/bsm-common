@@ -17,7 +17,7 @@
 
 ### Пример использования
 ```jsx
-import QualityBlock from "components/common/QualityBlock/index.js"
+import QualityBlock from "bsm-shared/components/common/QualityBlock/index.js"
 
 <QualityBlock 
   text={
@@ -28,7 +28,7 @@ import QualityBlock from "components/common/QualityBlock/index.js"
   title={<b>Заголовок</b>}
   path="/price"
   Class="w66"
-  imageBlock = {<img src="static/images/slide-profits/1.svg"/>}
+  imageBlock = {<img src="bsm-shared/static/images/slide-profits/1.svg"/>}
 />
 <QualityBlock 
   text={
@@ -39,13 +39,13 @@ import QualityBlock from "components/common/QualityBlock/index.js"
   title={<b>Заголовок</b>}
   path="/price"
   Class="w33"
-  imageBlock = {<img src="static/images/slide-profits/1.svg"/>}
+  imageBlock = {<img src="bsm-shared/static/images/slide-profits/1.svg"/>}
 />
 <QualityBlock 
   text="Текст"  
   title="Заголовок"
   path="/price"
   Class="w50"
-  imageBlock = {<img src="static/images/slide-profits/1.svg"/>}
+  imageBlock = {<img src="bsm-shared/static/images/slide-profits/1.svg"/>}
 />
 ```

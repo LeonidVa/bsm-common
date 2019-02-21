@@ -69,8 +69,8 @@
 
 ## Пример использования
 ```jsx
-import OrderForm from 'components/common/OrderForm';
-import {fields} from 'data/form/main';
+import OrderForm from 'bsm-shared/components/common/OrderForm';
+import {fields} from 'bsm-shared/data/form/main';
 
 <OrderForm title="Узнайте стоимость Вашей работы прямо сейчас!"  buttonLabel="Оценить" fields={fields}/>
 ```

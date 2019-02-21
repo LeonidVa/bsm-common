@@ -5,7 +5,7 @@
 ## Запуск, остановка и обновление
 см `/start.sh`, `/stop.sh` и `update.sh`
 ## Редиректы
-Редиректы задаются в `/utils/redirect.js`.
+Редиректы задаются в `/bsm-shared/utils/redirect.js`.
 Это просто список.
 
 Формат этого файла простой: откуда и куда.
@@ -20,10 +20,10 @@
 Т.е. если страница есть, а нужен с неё редирект - надо её удалить.
 
 ## Аналитика
-Код, который дёргает счетчики живёт в `/utils/analytics.js`.
+Код, который дёргает счетчики живёт в `/bsm-shared/utils/analytics.js`.
 Использовать надо так:
 ```js
-import triggerTarget from 'utils/analytics';
+import triggerTarget from 'bsm-shared/utils/analytics';
 ...
 triggerTarget("какой-то таргет")
 ```
@@ -31,9 +31,9 @@ triggerTarget("какой-то таргет")
 Тогда можно будет безопасно дёргать triggerTarget() не зависимо от того, загрузился ли счетчик. 
 
 ## Оповещения в телеграм
-Живёт в `/utils/telega.js`. Использовать надо так:
+Живёт в `/bsm-shared/utils/telega.js`. Использовать надо так:
 ```js
-import telega from 'utils/telega';
+import telega from 'bsm-shared/utils/telega';
 ...
 telega('текст сообщения');
 ```
