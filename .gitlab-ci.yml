@@ -23,7 +23,7 @@ stages:
   except:
     - master
 
-website_master:
+website-master:
   extends: .trigger_project_master
   variables:
     PROJECT_ID: 10934487
@@ -32,3 +32,23 @@ website:
   extends: .trigger_project
   variables:
     PROJECT_ID: 10934487
+
+landing-student-bs-master:
+  extends: .trigger_project_master
+  variables:
+    PROJECT_ID: 10934628
+
+landing-student-bs:
+  extends: .trigger_project
+  variables:
+    PROJECT_ID: 10934628
+
+landing-student-consultant-master:
+  extends: .trigger_project_master
+  variables:
+    PROJECT_ID: 10934643
+
+landing-student-consultant:
+  extends: .trigger_project
+  variables:
+    PROJECT_ID: 10934643
