@@ -111,8 +111,8 @@ variables:
     - eval $(ssh-agent -s)
     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
   script:
-    - echo "$STAGING_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
-    - ssh -p2017 rs@145.239.85.163 "/var/www/update-$CI_PROJECT_NAME.sh"
+    - echo "$PROD_SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+    - ssh -p$PROD_SSH_PORT $PROD_SSH_USER@$PROD_SSH_HOST "/var/www/update.sh $CI_PROJECT_NAME"
   only:
     - master
   except:
