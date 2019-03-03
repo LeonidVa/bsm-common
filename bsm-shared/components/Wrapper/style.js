@@ -1,6 +1,17 @@
-import { createGlobalStyle }  from "styled-components";
+import { createGlobalStyle}  from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
+  @font-face {
+    font-family: 'Ubuntu';
+    src: url('/static/fonts/Ubuntu-Bold.ttf') format("opentype");
+    src: url('/static/fonts/Ubuntu-BoldItalic.ttf') format("opentype");
+    src: url('/static/fonts/Ubuntu-Italic.ttf') format("opentype");
+    src: url('/static/fonts/Ubuntu-Light.ttf') format("opentype");
+    src: url('/static/fonts/Ubuntu-LightIta../stlic.ttf') format("opentype");
+    src: url('/static/fonts/Ubuntu-Medium.ttf') format("opentype");
+    src: url('/static/fonts/Ubuntu-MediumItalic.ttf') format("opentype");
+    src: url('/static/fonts/Ubuntu-Regular.ttf') format("opentype");
+  }
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,
