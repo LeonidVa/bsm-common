@@ -1,5 +1,5 @@
 import { PropTypes } from 'prop-types';
-import React from 'react';
+import React, { Suspense } from 'react';
 import getConfig from 'next/config';
 import { BaseForm, connect } from 'bsm-shared/components/common/forms/BaseForm';
 import Link from 'next/link';
@@ -7,7 +7,6 @@ import Dropzone from 'react-dropzone';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import close from '@fortawesome/fontawesome-free-solid/faWindowClose';
 import Dropdown from 'react-dropdown';
-import Recaptcha from 'react-google-recaptcha';
 import DatePicker from 'bsm-shared/components/common/DatePicker';
 import Fox from 'bsm-shared/static/images/fox-circle.svg';
 import Close from 'bsm-shared/components/modals/Close';
@@ -27,18 +26,20 @@ import {
 }from "./style.js"
 
 
-
+const Recaptcha =  React.lazy(() => import('react-google-recaptcha'));
 /*   fields are stored in /bsm-shared/data/main.js   */
 
 class OrderForm extends BaseForm {
   constructor(props) {
     super(props);
     this.state.Extended = false;
+    this.state.isCaptchaShown = false;
   }
-
+ 
   closeAlert = () => this.setState({ formSent: false });
 
   showFullForm = () => this.setState({ Extended: !this.state.Extended });
+  showCaptcha = () => this.setState({ isCaptchaShown: true });
 
   renderForm() {
     const { fields } = this.props;
@@ -91,6 +92,7 @@ class OrderForm extends BaseForm {
           required={field.required}
           value={this.props.form[field.name]}
           onChange={e => this.saveData({ [field.name]: e.target.value })}
+          onKeyDown={() => this.showCaptcha()}
         />
       </BlockFormItem>
     );
@@ -162,6 +164,7 @@ class OrderForm extends BaseForm {
             required={field.required}
             value={this.props.form[field.name]}
             onChange={e => this.saveData({ [field.name]: e.target.value })}
+            onKeyDown={() => this.showCaptcha()}
           />
         </BlockFormItem>
       );
@@ -283,29 +286,34 @@ class OrderForm extends BaseForm {
                 : 'Показать все поля▾'}
             </BlockFormMoreInfo>
             }
-            <div
-              style={{
-                display: 'flex',
-                justifyContent: 'center',
-                margin: '0.75em',
-              }}
-            >
-              {getConfig().publicRuntimeConfig.testing.recaptcha ?
-                <button
-                  type="button"
-                  id="captcha"
-                  onClick={this.verifyCallback}
-                >
-                  Recaptcha
-                </button>
-                :
-                <Recaptcha
-                  ref="recaptcha"
-                  onChange={this.verifyCallback}
-                  sitekey={getConfig().publicRuntimeConfig.analytics.recaptcha || '6LdEPVcUAAAAADLIyn6B2QGmxCGxED0Os2ElIwWS'}
-                />
-              }
-            </div>
+            {this.state.isCaptchaShown &&
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: 'center',
+                  margin: '0.75em',
+                }}
+              >
+          
+                {getConfig().publicRuntimeConfig.testing.recaptcha ?
+                  <button
+                    type="button"
+                    id="captcha"
+                    onClick={this.verifyCallback}
+                  >
+                    Recaptcha
+                  </button>
+                  :
+                  <Suspense fallback="">
+                    <Recaptcha
+                      ref="recaptcha"
+                      onChange={this.verifyCallback}
+                      sitekey={getConfig().publicRuntimeConfig.analytics.recaptcha || '6LdEPVcUAAAAADLIyn6B2QGmxCGxED0Os2ElIwWS'}
+                    />
+                  </Suspense>
+                }
+              </div> 
+            }
             <BLockFormAgree className="block-form__agree">
               Отправляя эти данные, я принимаю
               {' '}
